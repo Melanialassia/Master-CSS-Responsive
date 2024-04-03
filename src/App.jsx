@@ -27,6 +27,13 @@ function App() {
           </nav>
         </div>
       </header>
+      <section className={style.wrap}>
+        <section className={style.info}>
+          <div className={style.banner}>
+            <h1> CURSO DE MASTER EN CSS CON VÍCTOR ROBLES</h1>
+          </div>
+        </section>
+      </section>
     </div>
   );
 }
