@@ -99,7 +99,7 @@ function App() {
           </div>
 
           <h3>LOGIN</h3>
-          <div>
+          <div className={style.box}>
             <form>
               <label id="user" className={style.gear}>
                 {" "}
@@ -118,7 +118,7 @@ function App() {
           </div>
 
           <h3>REDES SOCIALES</h3>
-          <div className={style.social}>
+          <div className={style.box}>
             <div className={style.twitter}>
               <a href="#" className={style.gear}>
                 t
@@ -137,7 +137,7 @@ function App() {
           </div>
 
           <h3>PATROCINADORES</h3>
-          <div className={style.sponsors}></div>
+          <div className={style.box}></div>
 
         </aside>
         {/* <!-- Fin barra lateral --> */}
