@@ -89,19 +89,26 @@ function App() {
 
         {/* <!-- Inicio barra lateral --> */}
         <aside className={style.lateral}>
+
           <h3> BUSCAR</h3>
           <div className={style.search}>
-            <form action="">
+            <form>
               <input type="text" />
-              <input type="button" value="L" />
+              <input type="button" value="L" className={style.gear} />
             </form>
           </div>
+
           <h3>LOGIN</h3>
           <div>
-            <form action="">
-              <label id="user"> U</label>
+            <form>
+              <label id="user" className={style.gear}>
+                {" "}
+                U
+              </label>
               <input type="email" />
-              <label id="password">W</label>
+              <label id="password" className={style.gear}>
+                w
+              </label>
               <input type="password" />
               <input type="submit" value="Entrer" />
               <input type="reset" value="Limpiar" />
@@ -109,20 +116,29 @@ function App() {
               <a href="#">¿Has olvidado tu contraseña?</a>
             </form>
           </div>
+
           <h3>REDES SOCIALES</h3>
           <div className={style.social}>
             <div className={style.twitter}>
-              <a href="#">t</a>
+              <a href="#" className={style.gear}>
+                t
+              </a>
             </div>
             <div className={style.facebook}>
-              <a href="#">f</a>
+              <a href="#" className={style.gear}>
+                f
+              </a>
             </div>
             <div className={style.youtube}>
-              <a href="#">y</a>
+              <a href="#" className={style.gear}>
+                y
+              </a>
             </div>
           </div>
+
           <h3>PATROCINADORES</h3>
           <div className={style.sponsors}></div>
+
         </aside>
         {/* <!-- Fin barra lateral --> */}
       </section>
