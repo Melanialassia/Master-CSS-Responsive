@@ -3,6 +3,7 @@ import style from "./App.module.css";
 function App() {
   return (
     <div className={style.container}>
+      {/* <!-- Inicio HEADER --> */}
       <header className={style.header}>
         <div className={style.wrap}>
           <div className={style.logo}>
@@ -27,12 +28,19 @@ function App() {
           </nav>
         </div>
       </header>
+
+      {/* <!-- Fin HEADER --> */}
+
       <section className={style.wrap}>
         <section className={style.info}>
+          {/* <!-- Inicio BANNER --> */}
           <div className={style.banner}>
             <h1> CURSO DE MASTER EN CSS CON VÍCTOR ROBLES</h1>
           </div>
-          <div className={style.cards}>
+          {/* <!-- Fin BANNER --> */}
+
+          {/* <!-- Inicio Cartas --> */}
+          <div>
             <div className={style.card}>
               <p className={style.icon}>H</p>
               <h2 className={style.category}>Desarrollo Web</h2>
@@ -76,7 +84,47 @@ function App() {
               </p>
             </div>
           </div>
+          {/* <!-- Fin Cartas --> */}
         </section>
+
+        {/* <!-- Inicio barra lateral --> */}
+        <aside className={style.lateral}>
+          <h3> BUSCAR</h3>
+          <div className={style.search}>
+            <form action="">
+              <input type="text" />
+              <input type="button" value="L" />
+            </form>
+          </div>
+          <h3>LOGIN</h3>
+          <div>
+            <form action="">
+              <label id="user"> U</label>
+              <input type="email" />
+              <label id="password">W</label>
+              <input type="password" />
+              <input type="submit" value="Entrer" />
+              <input type="reset" value="Limpiar" />
+              <a href="#"> Registrate aquí</a>
+              <a href="#">¿Has olvidado tu contraseña?</a>
+            </form>
+          </div>
+          <h3>REDES SOCIALES</h3>
+          <div className={style.social}>
+            <div className={style.twitter}>
+              <a href="#">t</a>
+            </div>
+            <div className={style.facebook}>
+              <a href="#">f</a>
+            </div>
+            <div className={style.youtube}>
+              <a href="#">y</a>
+            </div>
+          </div>
+          <h3>PATROCINADORES</h3>
+          <div className={style.sponsors}></div>
+        </aside>
+        {/* <!-- Fin barra lateral --> */}
       </section>
     </div>
   );
