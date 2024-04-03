@@ -89,7 +89,6 @@ function App() {
 
         {/* <!-- Inicio barra lateral --> */}
         <aside className={style.lateral}>
-
           <h3> BUSCAR</h3>
           <div className={style.search}>
             <form>
@@ -99,18 +98,17 @@ function App() {
           </div>
 
           <h3>LOGIN</h3>
-          <div className={style.box}>
+          <div className={`${style.box} ${style.login}`}>
             <form>
-              <label id="user" className={style.gear}>
-                {" "}
+              <label id="user" className={`${style.gear} ${style.icons}`}>
                 U
               </label>
               <input type="email" />
-              <label id="password" className={style.gear}>
+              <label id="password" className={`${style.gear} ${style.icons} ${style.icons2}`}>
                 w
               </label>
               <input type="password" />
-              <input type="submit" value="Entrer" />
+              <input type="submit" value="Ingresar" />
               <input type="reset" value="Limpiar" />
               <a href="#"> Registrate aquí</a>
               <a href="#">¿Has olvidado tu contraseña?</a>
@@ -138,7 +136,6 @@ function App() {
 
           <h3>PATROCINADORES</h3>
           <div className={style.box}></div>
-
         </aside>
         {/* <!-- Fin barra lateral --> */}
       </section>
