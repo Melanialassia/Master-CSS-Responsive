@@ -1,4 +1,12 @@
 import style from "./App.module.css";
+// IMAGE
+import HTML  from "./assets/html5-badge-h-css3-graphics-multimedia-performance-semantics.png";
+import fireFox from "./assets/firefox-icon.png";
+import chrome from "./assets/chrome.png";
+import opera from "./assets/Opera_256x256.png";
+import safari from "./assets/safari.png";
+import android from "./assets/android.png";
+import apple from "./assets/ios.png";
 
 function App() {
   return (
@@ -104,7 +112,10 @@ function App() {
                 U
               </label>
               <input type="email" />
-              <label id="password" className={`${style.gear} ${style.icons} ${style.icons2}`}>
+              <label
+                id="password"
+                className={`${style.gear} ${style.icons} ${style.icons2}`}
+              >
                 w
               </label>
               <input type="password" />
@@ -116,7 +127,7 @@ function App() {
           </div>
 
           <h3>REDES SOCIALES</h3>
-          <div className={style.box}>
+          <div className={`${style.box} ${style.social}`}>
             <div className={style.twitter}>
               <a href="#" className={style.gear}>
                 t
@@ -138,7 +149,157 @@ function App() {
           <div className={style.box}></div>
         </aside>
         {/* <!-- Fin barra lateral --> */}
+
+        {/* <!-- Inicio articulos --> */}
+        <section className={style.articles}>
+          <h2>Últimos artículos</h2>
+          <div className={style.clearFloat} />
+          <article>
+            <div className={style.data}>
+              <span> Fecha: 12 dic</span>
+              <span>Categorías: Pruebas</span>
+            </div>
+            <h4>
+              <a href="#">Título del artículo</a>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              auctor est urna, id tincidunt diam gravida eu. Vestibulum vitae
+              sem lacus. Vestibulum eget sagittis ligula. Sed commodo sapien id
+              molestie elementum. Pellentesque aliquam pharetra elementum.
+              Vestibulum et consectetur leo.
+            </p>
+          </article>
+          <article>
+            <div className={style.data}>
+              <span> Fecha: 12 dic</span>
+              <span>Categorías: Pruebas</span>
+            </div>
+            <h4>
+              <a href="#">Título del artículo</a>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              auctor est urna, id tincidunt diam gravida eu. Vestibulum vitae
+              sem lacus. Vestibulum eget sagittis ligula. Sed commodo sapien id
+              molestie elementum. Pellentesque aliquam pharetra elementum.
+              Vestibulum et consectetur leo.
+            </p>
+          </article>
+          <article>
+            <div className={style.data}>
+              <span>Fecha: 12 dic</span>
+              <span>Categorías: Pruebas</span>
+            </div>
+            <h4>
+              <a href="#">Título del artículo</a>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              auctor est urna, id tincidunt diam gravida eu. Vestibulum vitae
+              sem lacus. Vestibulum eget sagittis ligula. Sed commodo sapien id
+              molestie elementum. Pellentesque aliquam pharetra elementum.
+              Vestibulum et consectetur leo.
+            </p>
+          </article>
+          <article>
+            <div className={style.data}>
+              <span>Fecha: 12 dic</span>
+              <span>Categorías: Pruebas</span>
+            </div>
+            <h4>
+              <a href="#">Título del artículo</a>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              auctor est urna, id tincidunt diam gravida eu. Vestibulum vitae
+              sem lacus. Vestibulum eget sagittis ligula. Sed commodo sapien id
+              molestie elementum. Pellentesque aliquam pharetra elementum.
+              Vestibulum et consectetur leo.
+            </p>
+          </article>
+          <article>
+            <div className={style.data}>
+              <span>Fecha: 12 dic</span>
+              <span>Categorías: Pruebas</span>
+            </div>
+            <h4>
+              <a href="#">Título del artículo</a>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              auctor est urna, id tincidunt diam gravida eu. Vestibulum vitae
+              sem lacus. Vestibulum eget sagittis ligula. Sed commodo sapien id
+              molestie elementum. Pellentesque aliquam pharetra elementum.
+              Vestibulum et consectetur leo.
+            </p>
+          </article>
+          <article className={style.blog}>
+            <a href="#"> Ir al blog</a>
+
+          </article>
+        </section>
+        {/* <!-- Fin articulos --> */}
       </section>
+      {/* <!-- Inicio FOOTER --> */}
+      <div className={style.clearFloat} />
+      <footer className={style.footer}>
+        <div className={style.wrap}>
+        <nav className={style.menuFooter}>
+          <h5>MENÚ</h5>
+            <ul>
+              <li>
+                <a href="#">INICIO</a>
+              </li>
+              <li>
+                <a href="#">BLOG</a>
+              </li>
+              <li>
+                <a href="#">FORMACIÓN</a>
+              </li>
+              <li>
+                <a href="#">CONTACTO</a>
+              </li>
+            </ul>
+          </nav>
+          <div className={style.location}>
+            <h5>¿DONDE ESTAMOS?</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0034831246087!2d-58.38276103029423!3d-34.60380919830959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf425a4a19%3A0xaf19ab7297421a8!2sAv.%209%20de%20Julio%20%26%20Av.%20Corrientes%2C%20C1048%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1712202891338!5m2!1ses!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div className={style.information}>
+            <h5>Desarrollado con</h5>
+            <p>
+              <img src={HTML} alt="logo" />
+            </p>
+            <h5>Optimizado para</h5>
+            <p className={style.browsers}>
+              <a href="#">
+                <img src={fireFox} alt="fireFox" />
+              </a>
+              <a href="#">
+                <img src={chrome} alt="Chrome" />
+              </a>
+              <a href="#">
+                <img src={opera} alt="Opera" />
+              </a>
+              <a href="#">
+                <img src={safari} alt="Safari" />
+              </a>
+              <a href="#">
+                <img src={android} alt="Android" />
+              </a>
+              <a href="#">
+                <img src={apple} alt="Apple" />
+              </a>
+            </p>
+            <h5>AUTOR</h5>
+            <p> &copy; Melani Alassia WEB - curso Master de CSS con Vístor Robles</p>
+            </div>
+        </div>
+      </footer>
+      {/* <!-- Fin FOOTER --> */}
+
     </div>
   );
 }

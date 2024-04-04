@@ -30,6 +30,11 @@
   font-family: "websymbolsRegular"; /* para que aparezca la tuerca en la barra de navegación*/
 }
 
+.clearFloat {
+  float: none;
+  clear: both;
+}
+
 .wrap {
   width: 1200px;
   margin: 0px auto;
@@ -165,7 +170,7 @@
   font-size: 15px;
 }
 
-/* LATERAL*/
+/* LATERAL MENU*/
 
 .lateral {
   width: 300px;
@@ -263,7 +268,7 @@
   box-shadow: 1px 1px 1px gray inset;
 }
 
-.icons{
+.icons {
   display: block;
   text-align: center;
   position: absolute;
@@ -272,7 +277,7 @@
   height: 30px;
 }
 
-.icons2{
+.icons2 {
   margin-left: 18px;
   margin-top: 25px;
   font-size: 20px;
@@ -287,7 +292,11 @@
   height: 35px;
   margin-top: 20px;
   color: white;
-  background:  linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%); /* DEGRADADO*/
+  background: linear-gradient(
+    to bottom,
+    #3eb8e5 0%,
+    #2ca0ca 100%
+  ); /* DEGRADADO*/
   border: 1px solid #156785;
   border-radius: 0px;
   cursor: pointer;
@@ -315,5 +324,106 @@
 
 .login a:hover {
   text-decoration: underline;
-  color: #2f78bc
+  color: #2f78bc;
+}
+
+.social {
+  height: 190px;
+}
+
+.social a {
+  display: block;
+  color: #333;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/*ARTICLES*/
+
+.articles {
+  width: 860px;
+  float: left;
+}
+
+.articles h2 {
+  display: block;
+  width: 90%;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-family: "BebasNeue";
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  background: url(assets/pxgray.png), white;
+  box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f,
+    3px 4px 0px #393d3f;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.articles article {
+  width: 90%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 40px auto;
+  padding: 10px;
+  font-family: "TrebuchetMS";
+  background: white;
+  color: black;
+  box-shadow: 1px 1px 2px #ddd;
+}
+
+.articles article h4 {
+  display: block;
+  font-size: 23px;
+  margin: 3px;
+}
+
+.articles article h4 a {
+  color: #00538c;
+}
+
+.articles article h4 a:hover {
+  text-decoration: underline;
+}
+
+.data {
+  float: right;
+  background: #393d3f;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  margin: -10px;
+  padding: 4px;
+  font-size: 13px;
+  border-radius: 0px 0px 0px 5px;
+}
+
+.data span {
+  margin: 6px;
+}
+
+.articles article p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.blog {
+  height: 100px;
+  margin-top: 60px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.blog a {
+  display: block; /* ESTO HACE QUE A TODA LA CAJA SE LE PUEDA HACER CLICK*/
+  font-family: "BebasNeue";
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #00538c;
 }
