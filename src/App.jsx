@@ -245,7 +245,7 @@ function App() {
       <div className={style.clearFloat} />
       <footer className={style.footer}>
         <div className={style.wrap}>
-        <nav className={style.menuFooter}>
+        <div className={style.menuFooter}>
           <h5>MENÚ</h5>
             <ul>
               <li>
@@ -261,7 +261,7 @@ function App() {
                 <a href="#">CONTACTO</a>
               </li>
             </ul>
-          </nav>
+          </div>
           <div className={style.location}>
             <h5>¿DONDE ESTAMOS?</h5>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0034831246087!2d-58.38276103029423!3d-34.60380919830959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf425a4a19%3A0xaf19ab7297421a8!2sAv.%209%20de%20Julio%20%26%20Av.%20Corrientes%2C%20C1048%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1712202891338!5m2!1ses!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
