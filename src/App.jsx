@@ -1,6 +1,7 @@
 import style from "./App.module.css";
+
 // IMAGE
-import HTML  from "./assets/html5-badge-h-css3-graphics-multimedia-performance-semantics.png";
+import HTML from "./assets/html5-badge-h-css3-graphics-multimedia-performance-semantics.png";
 import fireFox from "./assets/firefox-icon.png";
 import chrome from "./assets/chrome.png";
 import opera from "./assets/Opera_256x256.png";
@@ -95,6 +96,8 @@ function App() {
           {/* <!-- Fin Cartas --> */}
         </section>
 
+        <div className={style.clearFloat} />
+
         {/* <!-- Inicio barra lateral --> */}
         <aside className={style.lateral}>
           <h3> BUSCAR</h3>
@@ -132,16 +135,19 @@ function App() {
               <a href="#" className={style.gear}>
                 t
               </a>
+              <p className={style.overlay}>Twitter</p>
             </div>
             <div className={style.facebook}>
               <a href="#" className={style.gear}>
                 f
               </a>
+              <p className={style.overlay}>Facebook</p>
             </div>
             <div className={style.youtube}>
               <a href="#" className={style.gear}>
                 y
               </a>
+              <p className={style.overlay}>Youtube</p>
             </div>
           </div>
 
@@ -236,7 +242,6 @@ function App() {
           </article>
           <article className={style.blog}>
             <a href="#"> Ir al blog</a>
-
           </article>
         </section>
         {/* <!-- Fin articulos --> */}
@@ -245,8 +250,8 @@ function App() {
       <div className={style.clearFloat} />
       <footer className={style.footer}>
         <div className={style.wrap}>
-        <div className={style.menuFooter}>
-          <h5>MENÚ</h5>
+          <div>
+            <h5>MENÚ</h5>
             <ul>
               <li>
                 <a href="#">INICIO</a>
@@ -264,11 +269,18 @@ function App() {
           </div>
           <div className={style.location}>
             <h5>¿DONDE ESTAMOS?</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0034831246087!2d-58.38276103029423!3d-34.60380919830959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf425a4a19%3A0xaf19ab7297421a8!2sAv.%209%20de%20Julio%20%26%20Av.%20Corrientes%2C%20C1048%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1712202891338!5m2!1ses!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0034831246087!2d-58.38276103029423!3d-34.60380919830959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf425a4a19%3A0xaf19ab7297421a8!2sAv.%209%20de%20Julio%20%26%20Av.%20Corrientes%2C%20C1048%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1712202891338!5m2!1ses!2sar"
+              width="400"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
           <div className={style.information}>
-            <h5>Desarrollado con</h5>
+            <h5>Desarrollado</h5>
             <p>
               <img src={HTML} alt="logo" />
             </p>
@@ -294,12 +306,14 @@ function App() {
               </a>
             </p>
             <h5>AUTOR</h5>
-            <p> &copy; Melani Alassia WEB - curso Master de CSS con Vístor Robles</p>
-            </div>
+            <p>
+              {" "}
+              &copy; Melani Alassia WEB - curso Master de CSS con Vístor Robles
+            </p>
+          </div>
         </div>
       </footer>
       {/* <!-- Fin FOOTER --> */}
-
     </div>
   );
 }
